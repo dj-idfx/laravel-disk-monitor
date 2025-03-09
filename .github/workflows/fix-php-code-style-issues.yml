@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - '**.php'
+      - '**.php.stub'
 
 permissions:
   contents: write
