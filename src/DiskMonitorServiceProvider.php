@@ -2,9 +2,9 @@
 
 namespace Idfx\DiskMonitor;
 
+use Idfx\DiskMonitor\Commands\DiskMonitorCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Idfx\DiskMonitor\Commands\DiskMonitorCommand;
 
 class DiskMonitorServiceProvider extends PackageServiceProvider
 {

@@ -2,11 +2,11 @@
 
 namespace Idfx\DiskMonitor\Tests;
 
+use Idfx\DiskMonitor\DiskMonitorServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Schema;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Idfx\DiskMonitor\DiskMonitorServiceProvider;
 
 class TestCase extends Orchestra
 {
