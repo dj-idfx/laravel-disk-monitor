@@ -8,12 +8,16 @@ use Illuminate\Support\Facades\Route;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
+/*
+ * TODO: vanaf 33min.
+ */
+
 class DiskMonitorServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
         $package
-            ->name('laravel-disk-monitor')
+            ->name('disk-monitor')
             ->hasConfigFile()
             ->hasViews()
             ->hasMigration('create_disk_monitor_table')
@@ -24,7 +28,7 @@ class DiskMonitorServiceProvider extends PackageServiceProvider
     {
         Route::macro('diskMonitor', function (string $prefix) {
             Route::prefix($prefix)->group(function () {
-                Route::get('/', '\\'.DiskMetricsController::class);
+                Route::get('/', DiskMetricsController::class);
             });
         });
     }

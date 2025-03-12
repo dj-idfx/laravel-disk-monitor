@@ -4,7 +4,7 @@
     "keywords": [
         "Idfx",
         "laravel",
-        "laravel-disk-monitor"
+        "disk-monitor"
     ],
     "homepage": "https://github.com/dj-idfx/laravel-disk-monitor",
     "license": "MIT",
