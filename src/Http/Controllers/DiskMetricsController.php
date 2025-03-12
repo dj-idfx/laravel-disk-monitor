@@ -1,6 +1,7 @@
 <?php
 
 namespace Idfx\DiskMonitor\Http\Controllers;
+
 use Idfx\DiskMonitor\Models\DiskMonitorEntry;
 
 class DiskMetricsController
