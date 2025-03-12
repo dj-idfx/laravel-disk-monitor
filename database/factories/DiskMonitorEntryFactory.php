@@ -2,10 +2,13 @@
 
 namespace Idfx\DiskMonitor\Database\Factories;
 
+use Idfx\DiskMonitor\Models\DiskMonitorEntry;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class DiskMonitorEntryFactory extends Factory
 {
+    protected $model = DiskMonitorEntry::class;
+
     /**
      * Define the model's default state.
      */
