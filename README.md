@@ -32,7 +32,30 @@ This is the contents of the published config file:
 
 ```php
 return [
+    /**
+     * Name of the disk you want to monitor.
+     */
+    'disk_names' => [
+        'local',
+    ],
 ];
+```
+
+Finally, you should schedule the Spatie\DiskMonitor\Commands\RecordsDiskMetricsCommand to run daily.
+
+```php
+// in app/Console/Kernel.php
+
+use \Spatie\DiskMonitor\Commands\RecordsDiskMetricsCommand;
+
+class Kernel extends ConsoleKernel
+{
+    protected function schedule(Schedule $schedule)
+    {
+       // ...
+        $schedule->command(RecordsDiskMetricsCommand::class)->daily();
+    }
+}
 ```
 
 Optionally, you can publish the views using
@@ -43,10 +66,17 @@ php artisan vendor:publish --tag="disk-monitor-views"
 
 ## Usage
 
+You can view the amount of files each monitored disk has, in the disk_monitor_entries table.
+
+If you want to view the statistics in the browser add this macro to your routes file.
+
 ```php
-$diskMonitor = new Idfx\DiskMonitor();
-echo $diskMonitor->echoPhrase('Hello, Idfx!');
+// in a routes files
+
+Route::diskMonitor('my-disk-monitor-url');
 ```
+
+Now, you can see all statics when browsing /my-disk-monitor-url. Of course, you can use any url you want when using the diskMonitor route macro. We highly recommand using the auth middleware for this route, so guests can't see any data regarding your disks.
 
 ## Testing
 

@@ -5,6 +5,7 @@ namespace Idfx\DiskMonitor\Tests;
 use Idfx\DiskMonitor\DiskMonitorServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Schema;
 use Orchestra\Testbench\TestCase as Orchestra;
 
@@ -17,6 +18,8 @@ class TestCase extends Orchestra
         Factory::guessFactoryNamesUsing(
             fn (string $modelName) => 'Idfx\\DiskMonitor\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
+
+        Route::diskMonitor('disk-monitor');
     }
 
     protected function getPackageProviders($app): array

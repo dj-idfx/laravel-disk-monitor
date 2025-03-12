@@ -64,10 +64,7 @@
         "laravel": {
             "providers": [
                 "Idfx\\DiskMonitor\\DiskMonitorServiceProvider"
-            ],
-            "aliases": {
-                "DiskMonitor": "Idfx\\DiskMonitor\\Facades\\DiskMonitor"
-            }
+            ]
         }
     },
     "minimum-stability": "dev",
