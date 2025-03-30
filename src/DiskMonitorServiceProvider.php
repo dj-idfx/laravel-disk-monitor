@@ -9,7 +9,7 @@ use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
 /*
- * TODO: vanaf 33min.
+ * TODO: vanaf 1h00m00s
  */
 
 class DiskMonitorServiceProvider extends PackageServiceProvider
@@ -21,10 +21,16 @@ class DiskMonitorServiceProvider extends PackageServiceProvider
             ->hasConfigFile()
             ->hasViews()
             ->hasMigration('create_disk_monitor_table')
+//            ->hasRoute('web')
             ->hasCommand(RecordDiskMetricsCommand::class);
     }
 
     public function packageRegistered(): void
+    {
+        $this->registerRoutes();
+    }
+
+    protected function registerRoutes(): void
     {
         Route::macro('diskMonitor', function (string $prefix) {
             Route::prefix($prefix)->group(function () {
