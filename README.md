@@ -1,8 +1,8 @@
 # Laravel Disk Monitor
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/idfx/laravel-disk-monitor.svg?style=flat-square)](https://packagist.org/packages/idfx/laravel-disk-monitor)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/dj-idfx/laravel-disk-monitor/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/dj-idfx/laravel-disk-monitor/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/dj-idfx/laravel-disk-monitor/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/dj-idfx/laravel-disk-monitor/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
+[![run-tests](https://github.com/dj-idfx/laravel-disk-monitor/actions/workflows/run-tests.yml/badge.svg?branch=master)](https://github.com/dj-idfx/laravel-disk-monitor/actions/workflows/run-tests.yml)
+[![fix-php-code-style-issues](https://github.com/dj-idfx/laravel-disk-monitor/actions/workflows/fix-php-code-style-issues.yml/badge.svg?branch=master)](https://github.com/dj-idfx/laravel-disk-monitor/actions/workflows/fix-php-code-style-issues.yml)
 [![Total Downloads](https://img.shields.io/packagist/dt/idfx/laravel-disk-monitor.svg?style=flat-square)](https://packagist.org/packages/idfx/laravel-disk-monitor)
 
 Monitors the metrics of disks used by Laravel - Spatie package training.
