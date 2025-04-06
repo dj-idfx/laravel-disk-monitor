@@ -1,9 +1,9 @@
 # Laravel Disk Monitor
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/idfx/laravel-disk-monitor.svg?style=flat-square)](https://packagist.org/packages/idfx/laravel-disk-monitor)
+[![Total Downloads](https://img.shields.io/packagist/dt/idfx/laravel-disk-monitor.svg?style=flat-square)](https://packagist.org/packages/idfx/laravel-disk-monitor)
 [![run-tests](https://github.com/dj-idfx/laravel-disk-monitor/actions/workflows/run-tests.yml/badge.svg?branch=master)](https://github.com/dj-idfx/laravel-disk-monitor/actions/workflows/run-tests.yml)
 [![fix-php-code-style-issues](https://github.com/dj-idfx/laravel-disk-monitor/actions/workflows/fix-php-code-style-issues.yml/badge.svg?branch=master)](https://github.com/dj-idfx/laravel-disk-monitor/actions/workflows/fix-php-code-style-issues.yml)
-[![Total Downloads](https://img.shields.io/packagist/dt/idfx/laravel-disk-monitor.svg?style=flat-square)](https://packagist.org/packages/idfx/laravel-disk-monitor)
 
 Monitors the metrics of disks used by Laravel - Spatie package training.
 

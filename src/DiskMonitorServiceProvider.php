@@ -8,9 +8,6 @@ use Illuminate\Support\Facades\Route;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
-/*
- * TODO: vanaf 1h00m00s
- */
 
 class DiskMonitorServiceProvider extends PackageServiceProvider
 {
